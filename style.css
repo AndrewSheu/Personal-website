@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #BFA694;
+    height: 120px;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+}
+
+#header .logo{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 6px;
+}
+
+#header .navbar{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    margin: 0;
+    padding: 20px;
+}
+
