@@ -4,31 +4,53 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+@media screen and (max-width: 1920px) {
+    #header .logo{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 6px;
+    }
+    
+    #header .navbar{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding: 20px;        
+        letter-spacing: 3px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header .logo{
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 6px;
+    }
+    
+    #header .navbar{
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+}
+
 
 #header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    background-color: #BFA694;
-    height: 120px;
+    height: 20%;
 }
 
 #header a{
     text-decoration: none;
-    color: white;
-}
-
-#header .logo{
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 6px;
-}
-
-#header .navbar{
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 3px;
+    color: #845007;
 }
 
 .navbar ul{
@@ -43,3 +65,138 @@
     padding: 20px;
 }
 
+#home {
+    display: flex;
+    height: auto;
+    background-color: #BFA694;
+    justify-content: center;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.home-content {
+    display: grid;
+    gap: 2%;
+    color: #3A4660;
+}
+
+.home-content h1{
+    font-size: 64px;
+}
+
+.home-content p{
+    font-size: 40px;
+}
+
+.home-content ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.home-content li{
+    padding: 10px;
+    font-size:50px;
+}
+
+.home-image{
+    display: flex;
+    justify-content: center;
+}
+
+.home-image img{
+    opacity: 85%;
+    width: 540px;
+}
+
+#about {
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+
+#about h3 {
+    font-size: 32px;
+    color: #ED8A63;
+    letter-spacing: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#about h4 {
+    font-size: 18px;
+    color: #3A4660;
+    letter-spacing: 3px;
+}
+
+.about p {
+    font-size: 14px;
+    color: #3A4660;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 10%; */
+}
+
+.about-box{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.box{
+    display: flex;
+    background-color: #3A4660;
+    width: 50%;
+    height: 800px;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ED8A63;
+    position: relative;
+    top: -700px;
+}
+
+.personality {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 600px;
+    height: auto;
+    top: -600px;
+    left: 50%;
+}
+
+.personality p {
+    color: white;
+}
+#protfolio {
+    display: flex;
+    height: 960px;
+    justify-content: center;
+    background-color: #3A4660;
+}
+
+#contact {
+    display: flex;
+    height: 960px;
+    justify-content: center;
+}
+
+#footer {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    background-color: #ED8A63;
+}

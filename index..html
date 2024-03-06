@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrew Personal Website</title>
 </head>
 <body>
     <!-- header section-->
     <header id="header" class="">
-        <a href="" class="">
-            <!-- <img src="" alt=""> -->
+        <div>
             <a class="logo" href="#home">AndrewSheu</a>
-        </a>
+        </div>
         <!-- navbar -->
         <nav id="navbar" class="navbar">
             <ul>
@@ -40,30 +40,37 @@
     <!-- end header -->
 
     <!-- hero section-->
-    <div id="hero" class="home">
-        <div class="container">
-            <div class="hero-content">
+    <div id="home" class="home">
+        <div class="home-container">
+            <div class="home-content">
                 <h1>I'm Andrew Sheu</h1>
                 <!-- name-->
-                <p>Developer, UI/UX designer</p>
+                <p>Frontend Developer <br>
+                    & UI/UX designer</p>
                 <!-- position, title -->
                 <ul class="list-socialmedia">
-                    <li id="linkedin">
-                        <i class="fab fa-linkedin" style="font-size:24px; color: #0A66C2;"></i>
+                    <li id="linkedin"  >
+                        <a href="https://www.linkedin.com/in/andrew-sheu-853a87185/" target="_blank"><i class="fab fa-linkedin" style="color: #0A66C2;"></i></a>
                     </li>
                     <li id="github">
-                        <i class="fab fa-github" style="font-size:24px; color: #333;"></i>
+                        <a href="https://github.com/AndrewSheu" target="_blank">
+                            <i class="fab fa-github" style="color: #333;"></i>
+                        </a>
                     </li>
                     <li id="instagram">
-                        <i class="fab fa-instagram" style="font-size:24px; color: #E1306C;"></i>
+                        <a href="https://www.instagram.com/andrewsheu/" target="_blank">
+                            <i class="fab fa-instagram" style="color: #E1306C;"></i>
+                        </a>
                     </li>
                     <li id="facebook">
-                        <i class="fab fa-facebook" style="font-size:24px; color: #4267B2;"></i>
+                        <a href="https://www.facebook.com/andrew.sheu.31/" target="_blank">
+                            <i class="fab fa-facebook" style="color: #4267B2;"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="hero-image">
-                <img src="" alt="">
+            <div class="home-image">
+                <img src="/Andrew.png" alt="" width="" =>
             </div>
         </div>
     </div>
@@ -71,72 +78,86 @@
 
     <!-- main section -->
     <!-- about myself -->
-    <div class="about">
-        <div class="container">
-            <div class="aboutbox"></div>
-            <h2>ABOUT MYSELF</h2>
-            <hr width="" color="" size="">
-            <div class="education">
-                <h3>Education</h3>
-                <div>
-                    <h4>Queensland University Of Technology, </h4>
-                    <p>Bachelor of Information Technology <br>
-                        - Major in Computer Science <br>
-                        - Graduate July 2022</p>
+    <div id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-box">
+                    <div class="box"></div>
                 </div>
-                <div>
-                    <h4>South Bank TAFE, Queensland,</h4>
+                <div class="about-title" >
+                    <h2>ABOUT MYSELF</h2>
+                    <hr width="500px" color="#ED8A63" size="10px">
+                </div>
+                <div class="personality">
+                    <h3>Personality</h3>
+                    <p>I’m an easygoing, teamwork person. 
+                            Enjoy interact with people, talk to people, 
+                            understanding their idea and feeling which
+                            can inspire in some of the project or design. </p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div>
+                        <h4>Queensland University Of Technology, </h4>
+                        <p>Bachelor of Information Technology <br>
+                            - Major in Computer Science <br>
+                            - Graduate July 2022</p>
+                    </div>
+                    <div>
+                        <h4>South Bank TAFE, Queensland,</h4>
+                        <p>
+                            Diploma of Information Technology <br>
+                            - Networking, Graduate January 2018 <br>
+                            Certificate III in information <br>
+                            - Digital Media and Technology, Graduate November 2017
+                        </p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div>
+                        <h4>Volunteering UI/UX designer · Part-time,</h4>
+                        <p>
+                            Get2Know. ( Remote Sydney, Australia) Feb 2024 - Present <br><br>
+                            • Prototype, test and work closely with Front-end Developers. <br><br>
+                            • Create UX artifacts such as customer journey maps, user flows, sketches, wireframes, and interactive prototypes. <br><br>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Quality Assurance Internship,</h4>
+                        <p>
+                            TVBS Media Inc. ( Taipei, Taiwan) July - Oct 2023 <br><br>
+                            • Designed and authored functional test cases for regression testing, actively participating in the execution of regression testing processes. <br><br>
+                            • Actively communicated with the team, fostering close collaboration through Scrum methodologies, and organised the entire development and design process, actively participating in each meeting. <br><br>
+                            • Learned and applied automation testing, including proficiency in Postman, to conduct login page tests on an E-Commerce website. Contributed to the acceleration of overall testing speed, reducing testing time from one to three days to half a day, thus enhancing efficiency. <br><br>
+                            • Authored and conducted manual tests for key functional pages, providing detailed test reports and suggestions for improvement. Examples include comprehensive testing of the homepage, evaluating full functionality, and assessing features such as product display, purchase, and shopping cart integration. <br><br>
+                            • Gained comprehensive knowledge and understanding of the operational dynamics and design principles of the entire E-Commerce website. Developed a direction for writing test content, addressing potential challenges.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div>
+                        <p>
+                            Scrum project management, Problem solving, Teamwork. <br><br>
+                            <span>Programming:</span> Python, SQL, JavaScript, HTML, CSS, Bootstrap, Tailwind, React.
+                            <span>Tools:</span> MySQL, Github, Jira, Notion.
+                            <span>Language:</span> Mandarin(Native), English(Working Efficient).
+                        </p>
+                    </div>
+                </div>
+                <div class="interests">
+                    <h4>Barista-ing </h4>
                     <p>
-                        Diploma of Information Technology <br>
-                        - Networking, Graduate January 2018 <br>
-                        Certificate III in information <br>
-                        - Digital Media and Technology, Graduate November 2017
+                        With three years of work experience at a local cafe in Brisbane, I thoroughly enjoyed engaging with our regular customers and introducing our new coffee bean flavours each season. This experience not only enriched my interactions with customers but also provided me with the opportunity to actively contribute to the dynamic and seasonal offerings of the establishment. 
                     </p>
                 </div>
+                <hr width="" color="" size="">
             </div>
-            <div class="Experience">
-                <div>
-                    <h4>Volunteering UI/UX designer · Part-time,</h4>
-                    <p>
-                        Get2Know. ( Remote Sydney, Australia) Feb 2024 - Present <br><br>
-                        • Prototype, test and work closely with Front-end Developers. <br><br>
-                        • Create UX artifacts such as customer journey maps, user flows, sketches, wireframes, and interactive prototypes. <br><br>
-                    </p>
-                </div>
-                <div>
-                    <h4>Quality Assurance Internship,</h4>
-                    <p>
-                        TVBS Media Inc. ( Taipei, Taiwan) July - Oct 2023 <br><br>
-                        • Designed and authored functional test cases for regression testing, actively participating in the execution of regression testing processes. <br><br>
-                        • Actively communicated with the team, fostering close collaboration through Scrum methodologies, and organised the entire development and design process, actively participating in each meeting. <br><br>
-                        • Learned and applied automation testing, including proficiency in Postman, to conduct login page tests on an E-Commerce website. Contributed to the acceleration of overall testing speed, reducing testing time from one to three days to half a day, thus enhancing efficiency. <br><br>
-                        • Authored and conducted manual tests for key functional pages, providing detailed test reports and suggestions for improvement. Examples include comprehensive testing of the homepage, evaluating full functionality, and assessing features such as product display, purchase, and shopping cart integration. <br><br>
-                        • Gained comprehensive knowledge and understanding of the operational dynamics and design principles of the entire E-Commerce website. Developed a direction for writing test content, addressing potential challenges.
-                    </p>
-                </div>
-            </div>
-            <div class="Skill">
-                <div>
-                    <p>
-                        Scrum project management, Problem solving, Teamwork. <br><br>
-                        <span>Programming:</span> Python, SQL, JavaScript, HTML, CSS, Bootstrap, Tailwind, React.
-                        <span>Tools:</span> MySQL, Github, Jira, Notion.
-                        <span>Language:</span> Mandarin(Native), English(Working Efficient).
-                    </p>
-                </div>
-            </div>
-            <div class="Interests">
-                <h4>Barista-ing </h4>
-                <p>
-                    With three years of work experience at a local cafe in Brisbane, I thoroughly enjoyed engaging with our regular customers and introducing our new coffee bean flavours each season. This experience not only enriched my interactions with customers but also provided me with the opportunity to actively contribute to the dynamic and seasonal offerings of the establishment. 
-                </p>
-            </div>
-            <hr width="" color="" size="">
         </div>
+
     </div>
 
     <!-- protfolio -->
-    <div class="protfolio">
+    <div id="protfolio" class="protfolio">
         <div class="container">
             <h2>PROTFOLIO</h2>
             <div class="project1">
@@ -161,7 +182,7 @@
     </div>
 
     <!-- contact me -->
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="container">
             <h2>CONTACT ME</h2>
             <div class="form">
@@ -184,7 +205,7 @@
     <!-- end main -->
 
     <!-- footer section -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <p>
                 +61 0452276278 <br>
