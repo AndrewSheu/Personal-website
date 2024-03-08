@@ -1,7 +1,6 @@
 .color1 { background-color: white; color: #845007;}
 .color2 { background-color: #3A4660; color: white;}
 .color3 { background-color: white; color: #3A4660;}
-.color4 { background-color: #BFA694; color: white;}
 
 * {
     margin: 0;
@@ -25,6 +24,12 @@
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 3px;
+    cursor: pointer;
+}
+
+#header .navbar a:hover{
+    text-decoration: underline;
+
 }
 
 h2 {
@@ -196,7 +201,7 @@ h2 {
 .hr {
     display: flex;
     justify-content: center;
-    padding: 5%;
+    padding: 8% 0% 0% 0%;
 }
 
 #portfolio {
@@ -218,135 +223,157 @@ h2 {
 .portfolio h2{
     color: #ED8A63;
     letter-spacing: 5px;
-    padding-bottom: 10%;
 }
 
 .project-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-    gap: 10%;
+    display: flex;
+    flex-wrap: nowwrap;
+    justify-content: center;
+    align-items: flex-end
 }
-/* auto change line when on small screen */
+
+.notlinkshow {
+    text-decoration: none;
+}
 
 .project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    padding: 3%;
+}
+
+.projectbox:hover {
+    padding: 4%;
+
 }
 
 .projectbox {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: auto;
     border: 0.5rem solid #ED8A63;
     border-radius: 1rem;
-    background-color: white;
 }
+
+
 
 .project-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10%;
+    padding: 5%;
 }
 
 .project-detail h4 {
-    font-size: 24px;
+    font-size: 18px;
     color: #ED8A63;
     padding: 5%;
 }
 
 
-
 #contact {
-    display: flex;
     height: auto;
-    justify-content: flex-start;
     padding: 10% 10% 5% 10%;
-    
+    background-color: #ffffff;
 }
 
 .contact-container {
-    color: #845007;
+    color: #ED8A63;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-title {
     display: flex;
+    justify-content: flex-start;
+    width: 100%;   
 }
 
-.contact-title hr{
-    background-color: #845007;
+.contact-title hr {
+    background-color: #ED8A63;
     width: 10px;
+    border: none;
 }
 
 .contact-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5%;
+    flex-direction: column;
+    padding: 1%;
 }
 
 .contact-form p {
     font-size: 18px;
+    font-weight: 600;
+    width: 30%;
+    padding: 2%;
 }
 
 .contact-input {
     display: flex;
     padding: 2%;
-    /* background-color: #BFA694; */
 }
 
-.contact-form p, input, textarea{
-    padding: 10px;
+.contact-form input,textarea{
+    border-color: none;
+    outline: 1px dotted #ED8A63
 }
 
-.contact-form p:focus, input:focus, textarea:focus{
-    background-color:#eedccf;
-    color: #3A4660;
-    font-size: 16px;
+.contact-form input:focus {
     font-weight: 500;
-    outline: 1px solid #BFA694;
-    border-radius: 3px;
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: #ED8A63;
 }
 
-
-.contact-submit {
-    display: flex;
-    justify-content: center;
+.contact-form textarea:focus{
+    font-weight: 500;
+    outline: 0;
+    border-width: 1 0 3px;
+    border-color: #ED8A63;
 }
 
-.contact-submit input{
+.contact-submit input {
+    padding: 12%;
+    background-color: #3A4660;
     color: white;
     font-size: 18px;
-    font-weight: 500;
-    border: none;
-    width: 20%;
-    background-color: #3A4660;
-}
-
-.contact-submit input{
+    border-radius: 10%;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 #footer {
     display: flex;
     height: auto;
     justify-content: center;
-    background-color: #3A4660;
     color: #ED8A63;
+    background-color: #3A4660;
+    width: 100%;
 }
 
 .footer-container{
     display: flex;
     align-items: center;
+    background-color: #3A4660;
+
 }
 
 .footer-container p {
     margin: 5%;
+    
+}
+
+.end_footer_color1 {
+    height: 10px; 
+    background-color: #ED8A63;
+}
+
+.end_footer_color2 {
+    height: 10px; 
+    background-color: #BFA694;
 }
 
 

@@ -4,18 +4,20 @@ window.addEventListener('scroll', function(){
 
     var scrollTop = window.scrollY;
 
+    //console.log(scrollTop)
+
     if (scrollTop < 765) {
-        navbar.classList.remove('color2', 'color3', 'color4');
+        navbar.classList.remove('color2', 'color3');
         navbar.classList.add('color1');
     } else if (scrollTop < 2500) {
-        navbar.classList.remove('color1', 'color3', 'color4');
+        navbar.classList.remove('color1', 'color3',);
         navbar.classList.add('color2');
-    } else if (scrollTop<3515) {
-        navbar.classList.remove('color1', 'color2', 'color4');
+    } else if (scrollTop<3685) {
+        navbar.classList.remove('color1', 'color2',);
         navbar.classList.add('color3');
     } else {
-        navbar.classList.remove('color1', 'color2', 'color3');
-        navbar.classList.add('color4');
+        navbar.classList.remove('color1', 'color3');
+        navbar.classList.add('color2');
     }
 
     var links = document.querySelectorAll('.header_font_color a');
@@ -26,7 +28,7 @@ window.addEventListener('scroll', function(){
         } 
         else if (scrollTop < 2500) {
             link.style.color = 'white';
-        } else if (scrollTop < 3515) {
+        } else if (scrollTop < 3685) {
             link.style.color = '#3A4660';
         } else {
             link.style.color = 'white';
@@ -68,3 +70,25 @@ links.forEach(function(link) {
         });
     });
 });
+
+const projet_list = document.querySelector(".start_add_project")
+
+fetch('./infor.json')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        data.forEach(Element => {
+            projet_list.insertAdjacentHTML('beforebegin',`<a class="notlinkshow" target="_blank" href="${Element.projectURL}">
+            <div class="project">
+                <div class="projectbox">
+                    <div class="project-image">
+                        <img src="${Element.pojectImg}" alt="" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <h4>${Element.projectName}</h4>
+                    <hr width="200" color="#ED8A63" size="6">
+            </div>
+        </a>`);
+        });
+    })

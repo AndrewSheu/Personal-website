@@ -1,3 +1,19 @@
 [
-    "github-project"
+    {
+        "projectName": "Calender & Events",
+        "projectURL": "https://github.com/AndrewSheu/Calendar",
+        "pojectImg": "/Image/Calender.png"
+    },
+
+    {
+        "projectName": "Calculater",
+        "projectURL": "https://github.com/AndrewSheu/Calculater",
+        "pojectImg": "/Image/Calculater.png"
+    },
+
+    {
+        "projectName": "TodoList",
+        "projectURL": "https://github.com/AndrewSheu/ToDoList",
+        "pojectImg": "/Image/TodoList.png"
+    }
 ]
