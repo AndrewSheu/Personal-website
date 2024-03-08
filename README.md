@@ -1,4 +1,7 @@
 ## Andrew Sheu Personal-website
+<https://andrewsheu-website.netlify.app>
+Build by netlify.
+
 
 ### Figma Design Link
 <https://www.figma.com/file/XgV2FY0qJA4wE6xL8CjkTn/Personal-Website?type=design&node-id=0%3A1&mode=design&t=hk9TslJiGUPzNDYF-1>
