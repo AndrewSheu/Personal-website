@@ -86,7 +86,7 @@ fetch('./infor.json')
                 </div>
                 <div class="project-detail">
                     <h4>${Element.projectName}</h4>
-                    <hr width="200" color="#ED8A63" size="6">
+                    <hr width="90%" color="#ED8A63" size="1%">
             </div>
         </a>`);
         });

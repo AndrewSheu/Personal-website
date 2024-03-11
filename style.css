@@ -34,28 +34,17 @@
 
 h2 {
     font-size: 40px;
-    padding: 20px;        
+    padding: 2%;        
     letter-spacing: 3px;
 }
 
-@media screen and (max-width: 768px) {
-    #header .logo{
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: 6px;
-    }
-    
-    #header .navbar{
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: 3px;
-    }
+.mobile-navbar{
+    display: none;
 }
-
 
 #header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     position: fixed;
@@ -80,14 +69,16 @@ h2 {
     padding: 20px;
 }
 
-
+.mobile-navbar i {
+    font-size: 24px;
+}
 
 #home {
     display: flex;
     height: auto;
     background-color: #BFA694;
     justify-content: center;
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
 }
 
 .home-container {
@@ -117,17 +108,16 @@ h2 {
 }
 
 .home-content li{
-    padding: 10px;
-    font-size:50px;
+    padding: 2%;
+    font-size: 48px;
 }
 
 .home-image{
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 .home-image img{
-    width: 540px;
+    width: 550px;
 }
 
 #about {
@@ -170,20 +160,6 @@ h2 {
     flex-direction: column;
 }
 
-.about-box{
-    display: flex;
-    justify-content: flex-end;
-    /* position: relative; */
-    margin-right: 2%;
-}
-
-.bluebox{
-    display: flex;
-    background-color: #3A4660;
-    width: 50%;
-    height: 800px;
-}
-
 .about-title {
     display: flex;
     flex-direction: column;
@@ -193,9 +169,8 @@ h2 {
 }
 
 .about-content {
-    padding-left: 10%;
-    padding-right: 10%;
-
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .hr {
@@ -210,7 +185,7 @@ h2 {
     height: auto;
     justify-content: center;
     background-color: #3A4660;
-    padding: 10%;
+    padding: 10% 10% 5% 10%;
 }
 
 .portfolio-container {
@@ -222,12 +197,11 @@ h2 {
 
 .portfolio h2{
     color: #ED8A63;
-    letter-spacing: 5px;
+    padding: 0% 0% 8% 0%;
 }
 
 .project-wrapper {
     display: flex;
-    flex-wrap: nowwrap;
     justify-content: center;
     align-items: flex-end
 }
@@ -247,17 +221,14 @@ h2 {
 
 .projectbox:hover {
     padding: 4%;
-
 }
 
 .projectbox {
-    width: 300px;
+    width: 260px;
     height: auto;
-    border: 0.5rem solid #ED8A63;
-    border-radius: 1rem;
+    border: 0.2rem solid #ED8A63;
+    padding: 1%;
 }
-
-
 
 .project-detail {
     display: flex;
@@ -290,7 +261,8 @@ h2 {
 .contact-title {
     display: flex;
     justify-content: flex-start;
-    width: 100%;   
+    width: 100%;
+    padding: 2%;
 }
 
 .contact-title hr {
@@ -321,7 +293,6 @@ form {
     border-color: none;
     outline: 1px dotted #ED8A63;
     padding: 1%;
-
 }
 
 .contact-form input:focus {
@@ -344,7 +315,9 @@ form {
 .contact-submit {
     display: flex;
     justify-content: center;
+    padding: 2%;
 }
+
 .contact-submit input {
     padding: 2%;
     background-color: #3A4660;
@@ -352,6 +325,7 @@ form {
     font-size: 16px;
     border-radius: 5%;
     cursor: pointer;
+    font-weight: 500;
 }
 
 #footer {
@@ -365,18 +339,16 @@ form {
 
 .footer-container{
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
     background-color: #3A4660;
-
 }
 
 .footer-container p {
     margin: 5%;
-    
 }
 
 .end_footer_color1 {
-    height: 10px; 
+    height: 5px; 
     background-color: #ED8A63;
 }
 
@@ -401,3 +373,170 @@ form {
   #back-to-top:hover {
     background-color: #f8b69c;
   }
+
+
+  @media screen and (max-width: 920px) {
+
+    #header .logo{
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 6px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding: 2%;        
+        letter-spacing: 3px;
+    }
+
+    .desktop-navbar{
+        display: none;
+    }
+    .mobile-navbar{
+        display: inline;
+    }
+
+    .home-content h1{
+        font-size: 42px;
+    }
+
+    .home-content p{
+        font-size: 24px;
+    }
+
+    .home-content li{
+        padding: 2%;
+        font-size: 32px;
+    }
+
+    .home-image img{
+        width: 80%;
+    }
+
+    #about h3 {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    #about h4 {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    #about p {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .project {
+        padding: 2%;
+    }
+
+    .projectbox {
+        width: 180px;
+        height: auto;
+    }
+
+    .project-detail h4 {
+        font-size: 12px;
+        color: #ED8A63;
+        padding: 5%;
+    }
+
+    .contact-form p {
+        font-size: 14px;
+        width: 35%;
+        padding: 1%;
+    }
+
+    .contact-submit input {
+        font-size: 12px;
+    }
+
+    .footer-container p {
+        font-size: 11px;
+        margin: 3%;
+    }
+
+    .end_footer_color1 {
+        height: 3px; 
+        background-color: #ED8A63;
+    }
+    
+    .end_footer_color2 {
+        height: 8px; 
+        background-color: #BFA694;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    #header .logo{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-size: 18px;
+        padding: 2%;        
+        letter-spacing: 2px;
+    }
+
+    .home-content h1{
+        font-size: 24px;
+    }
+
+    .home-content p{
+        font-size: 14px;
+    }
+
+    .home-content li{
+        padding: 2%;
+        font-size: 18px;
+    }
+
+    .home-image img{
+        width: 100%;
+    }
+
+    #about h3 {
+        font-size: 12px;
+    }
+
+    #about h4 {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    
+    #about p {
+        font-size: 8px;
+    }
+
+    .projectbox {
+        width: 100px;
+        height: auto;
+    }
+
+    .project-detail h4 {
+        font-size: 8px;
+        color: #ED8A63;
+        padding: 5%;
+    }
+
+    .contact-form p {
+        font-size: 11px;
+        width: 35%;
+        padding: 1%;
+    }
+
+    .contact-submit input {
+        font-size: 10px;
+    }
+
+    .footer-container p {
+        font-size: 8px;
+        margin: 3%;
+    }
+}
