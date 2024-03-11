@@ -10,8 +10,9 @@
 }
 
 .main {
-    margin-top: 7%;
+    margin-top: 16%;
     width: 100%;
+    height: auto;
 }
 
 #header .logo{
@@ -408,7 +409,7 @@ form {
     }
 
     .home-content li{
-        padding: 2%;
+        padding: 3%;
         font-size: 32px;
     }
 
@@ -530,7 +531,7 @@ form {
 
     .contact-form p {
         font-size: 11px;
-        width: 35%;
+        width: 20%;
         padding: 1%;
     }
 
