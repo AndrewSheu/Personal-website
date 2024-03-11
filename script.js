@@ -76,7 +76,6 @@ const projet_list = document.querySelector(".start_add_project")
 fetch('./infor.json')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
         data.forEach(Element => {
             projet_list.insertAdjacentHTML('beforebegin',`<a class="notlinkshow" target="_blank" href="${Element.projectURL}">
             <div class="project">

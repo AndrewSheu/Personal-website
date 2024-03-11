@@ -299,7 +299,7 @@ h2 {
     border: none;
 }
 
-.contact-form {
+form {
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -319,7 +319,9 @@ h2 {
 
 .contact-form input,textarea{
     border-color: none;
-    outline: 1px dotted #ED8A63
+    outline: 1px dotted #ED8A63;
+    padding: 1%;
+
 }
 
 .contact-form input:focus {
@@ -327,21 +329,28 @@ h2 {
     outline: 0;
     border-width: 0 0 3px;
     border-color: #ED8A63;
+    padding: 1%;
+
 }
 
 .contact-form textarea:focus{
     font-weight: 500;
     outline: 0;
-    border-width: 1 0 3px;
+    border-width: 2px;
     border-color: #ED8A63;
+    padding: 1%;
 }
 
+.contact-submit {
+    display: flex;
+    justify-content: center;
+}
 .contact-submit input {
-    padding: 12%;
+    padding: 2%;
     background-color: #3A4660;
     color: white;
-    font-size: 18px;
-    border-radius: 10%;
+    font-size: 16px;
+    border-radius: 5%;
     cursor: pointer;
 }
 

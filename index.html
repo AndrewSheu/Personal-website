@@ -174,8 +174,6 @@
         </div>
     </div>
 
-
-
     <!-- contact me -->
     <div id="contact" class="contact">
         <div class="contact-container">
@@ -183,31 +181,34 @@
                 <hr>
                 <h2>CONTACT ME</h2>
             </div>
-
-            <div class="contact-form">
-                <div class="contact-input" >
-                    <p>Name:</p>
-                    <input type="text" >
+            <form action="https://formsubmit.co/haoensheu@gmail.com" method="POST">
+                <div class="contact-form">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <div class="contact-input" >
+                        <p>Name:</p>
+                        <input id="name" name="subject" type="text" placeholder="Your name ~" required>
+                    </div>
+                    <div class="contact-input" >
+                        <p>Phone:</p>
+                        <input id="number" name="number" type="number" placeholder="04xx-xxx-xxx ~" required>
+                    </div>
+                    <div class="contact-input" >
+                        <p>Email:</p>
+                        <input id="email" name="email" type="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="contact-input" >
+                        <p>Message:</p>
+                        <textarea id="body" name="body" id="" cols="70%" rows="5%" placeholder="Write your  message here ~" required></textarea>
+                    </div>
                 </div>
-                <div class="contact-input" >
-                    <p>Phone:</p>
-                    <input type="number">
+                <div class="contact-submit" >
+                    <input class="submit-email" type="submit" value="Send out message to Andrew" target="_blank">
                 </div>
-                <div class="contact-input" >
-                    <p>Email:</p>
-                    <input type="email" >
-                </div>
-                <div class="contact-input" >
-                    <p>Message:</p>
-                    <textarea name="" id="" cols="70%" rows="5%" ></textarea>
-                </div>
-            </div>
-            <div class="contact-submit" >
-                <input type="submit" value="SUBMIT">
-            </div>
+            </form>    
         </div>
     </div>
     <!-- end main -->
+
 
     <a href="#" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
