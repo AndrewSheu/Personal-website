@@ -275,13 +275,15 @@ form {
     display: flex;
     flex-direction: column;
     padding: 1%;
+    justify-content: space-around;
 }
 
 .contact-form p {
     font-size: 18px;
-    font-weight: 600;
-    width: 30%;
-    padding: 2%;
+    font-weight: 400;
+    width: 35%;
+    padding: 2% 20% 2% 2%;
+
 }
 
 .contact-input {
@@ -315,7 +317,7 @@ form {
 .contact-submit {
     display: flex;
     justify-content: center;
-    padding: 2%;
+    padding: 4%;
 }
 
 .contact-submit input {
