@@ -43,6 +43,8 @@ h2 {
     display: none;
 }
 
+
+
 #header {
     display: flex;
     justify-content: space-evenly;
@@ -54,7 +56,7 @@ h2 {
     height: auto;
 }
 
-#header a{
+#header a, i{
     text-decoration: none;
     color: #845007;
 }
@@ -396,6 +398,7 @@ form {
     .desktop-navbar{
         display: none;
     }
+
     .mobile-navbar{
         display: inline;
     }
