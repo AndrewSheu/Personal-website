@@ -17,13 +17,14 @@
 
 #header {
     display: none;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1%;
+    padding: 3% 8%;
     position: fixed;
     top: 0;
     width: 100%;
     min-height: auto;
+    gap: 30%;
 }
 
 .show {
@@ -83,7 +84,7 @@ h2 {
 
 .navbar li{
     margin: 0;
-    padding: 8%;
+    padding: 5%;
     transition: 0.7s ease;
 }
 
@@ -398,13 +399,13 @@ form {
   @media screen and (max-width: 920px) {
     #header {
         display: none;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        padding: 3%;
+        padding: 3% 8% 6% 8%;
         position: fixed;
         top: 0;
         width: 100%;
-        min-height: 8%;
+        min-height: auto;
     }
 
 
