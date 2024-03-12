@@ -10,7 +10,6 @@
 }
 
 .main {
-    /* margin-top: 20%; */
     width: 100%;
     height: auto;
 }
@@ -94,7 +93,7 @@ h2 {
 
 #home {
     display: flex;
-    height: auto;
+    height: 100vh;
     background-color: #BFA694;
     justify-content: center;
     padding: 0% 5%;
@@ -136,7 +135,7 @@ h2 {
 }
 
 .home-image img{
-    width: 550px;
+    height: 100vh;
 }
 
 #about {
@@ -396,7 +395,12 @@ form {
   }
 
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 1024px) {
+    #home {
+        padding: 0% 5% 0% 5%;
+        height: 80vh;
+    }
+    
     #header {
         display: none;
         justify-content: center;
@@ -435,7 +439,7 @@ form {
     .desktop-navbar{
         position: fixed;
         left: -150%;
-        top: 6%;
+        top: 5%;
         gap: 0;
         flex-direction: column;
         width: 100%;
@@ -483,6 +487,7 @@ form {
 
     .home-image img{
         width: 80%;
+        height: auto;
     }
 
     #about h3 {
@@ -543,6 +548,10 @@ form {
 }
 
 @media screen and (max-width: 430px) {
+    #home {
+        padding: 0% 5% 0% 5%;
+        height: 40vh;
+    }
 
     #header .logo{
         font-size: 16px;
@@ -551,7 +560,7 @@ form {
     }
 
     #header .navbar{
-        font-size: 10px;
+        font-size: 9px;
     }
 
     #header .bar {
