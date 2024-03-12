@@ -355,6 +355,7 @@ form {
     color: #ED8A63;
     background-color: #3A4660;
     width: 100%;
+    text-decoration: none; 
 }
 
 .footer-container{
@@ -595,7 +596,7 @@ form {
     }
 
     .home-image img{
-        width: 80%;
+        width: 90%;
     }
 
     #about h3 {
