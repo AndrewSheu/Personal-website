@@ -1,8 +1,12 @@
 // Scrolling Header Color Change
 window.addEventListener('scroll', function(){
-    var navbar = document.querySelector('.header');
+    var navbar = document.querySelector('.header' );
+
 
     var scrollTop = window.scrollY;
+
+    hamburger.classList.remove("active")
+    navmenu.classList.remove("active")
 
     //console.log(scrollTop)
 
@@ -41,6 +45,13 @@ window.addEventListener('scroll', function(){
     } else {
       backToTopButton.style.display = 'none';
     }
+
+    var showheader = document.getElementById('header');
+    if (scrollTop < 400) {
+        showheader.style.display = 'none';
+    } else {
+        showheader.style.display = 'flex';
+    }
 } )
 
 document.getElementById('back-to-top').addEventListener('click', function(e) {
@@ -50,6 +61,7 @@ document.getElementById('back-to-top').addEventListener('click', function(e) {
       behavior: 'smooth'
     });
 });
+
 
 
 
@@ -91,3 +103,18 @@ fetch('./infor.json')
         </a>`);
         });
     })
+
+
+const hamburger = document.querySelector(".mobile-navbar");
+const navmenu = document.querySelector(".desktop-navbar");
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("active")
+    navmenu.classList.toggle("active")
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navmenu.classList.remove("active")
+}))
+
